@@ -1,0 +1,8 @@
+.brand-logo{
+    margin-left:1%;
+}
+@media only screen and (min-width: 1000px) {
+    .row{
+        width:60%;
+    }
+  }

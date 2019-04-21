@@ -1,0 +1,21 @@
+<div class="center">
+    <h4 class="center">Add new task</h4>
+    <form style="width:70%;margin:auto;" novalidate ng-submit="addtask()">
+        <input type="text" name="text" ng-required="true" ng-model="newtask.task">
+        <input type="submit" class="btn red" ng-required="true">
+    </form>
+    <ul id="tasklist">
+            <div class="row center" style="margin:0 auto !important;" ng-repeat="task in tasks">
+                    <div class="col s12 m12 center">
+                      <div class="card center orange darken-1">
+                        <div class="card-content black-text">
+                          <span class="card-title">{{task.name}}</span>
+                        </div>
+                        <div class="card-action">
+                         <p>{{task.before}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    </ul>
+</div>
