@@ -1,6 +1,11 @@
 .brand-logo{
     margin-left:1%;
 }
+.centerform{
+    width:60%;
+    margin:50px auto;
+    text-align:center;
+}
 @media only screen and (min-width: 1000px) {
     .row{
         width:60%;

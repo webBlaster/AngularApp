@@ -1,4 +1,5 @@
 var App = angular.module("App", ["ngRoute", "ngAnimate"]);
+
 //configuration for the app before it starts
 App.config([
   "$routeProvider",
@@ -7,7 +8,8 @@ App.config([
     $locationProvider.hashPrefix("");
     $routeProvider
       .when("/home", { templateUrl: "components/home.html" })
-      .when("/history", { templateUrl: "components/history.html" })
+      .when("/signup", { templateUrl: "components/signup.html" })
+      .when("/signin", { templateUrl: "components/signin.html" })
       .when("/task", {
         templateUrl: "components/taskview.html",
         controller: "TaskController"
