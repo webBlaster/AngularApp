@@ -8,7 +8,10 @@ App.config([
     $locationProvider.hashPrefix("");
     $routeProvider
       .when("/home", { templateUrl: "components/home.html" })
-      .when("/signup", { templateUrl: "components/signup.html" })
+      .when("/signup", {
+        templateUrl: "components/signup.html",
+        controller: "SignupController"
+      })
       .when("/signin", {
         templateUrl: "components/signin.html",
         controller: "SigninController"
@@ -42,6 +45,8 @@ App.controller("TaskController", [
     };
   }
 ]);
+//Signup view controller
+App.controller("SignupController", ["$scope", function($scope) {}]);
 
 //Signin view controller
-App.controller("SigninController", ["$scope", function() {}]);
+App.controller("SigninController", ["$scope", function($scope) {}]);
