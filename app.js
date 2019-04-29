@@ -9,7 +9,10 @@ App.config([
     $routeProvider
       .when("/home", { templateUrl: "components/home.html" })
       .when("/signup", { templateUrl: "components/signup.html" })
-      .when("/signin", { templateUrl: "components/signin.html" })
+      .when("/signin", {
+        templateUrl: "components/signin.html",
+        controller: "SigninController"
+      })
       .when("/task", {
         templateUrl: "components/taskview.html",
         controller: "TaskController"
@@ -39,3 +42,6 @@ App.controller("TaskController", [
     };
   }
 ]);
+
+//Signin view controller
+App.controller("SigninController", ["$scope", function() {}]);
